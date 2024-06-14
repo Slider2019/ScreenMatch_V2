@@ -21,6 +21,19 @@ public class Serie {
         this.sinopsis = datosSerie.sinopsis();
     }
 
+    @Override
+    public String toString() {
+        return "Serie{" +
+                "titulo='" + titulo + '\'' +
+                ", totalTemporadas=" + totalTemporadas +
+                ", evaluacion=" + evaluacion +
+                ", poster='" + poster + '\'' +
+                ", genero=" + genero +
+                ", actores='" + actores + '\'' +
+                ", sinopsis='" + sinopsis + '\'' +
+                '}';
+    }
+
     public String getTitulo() {
         return titulo;
     }
