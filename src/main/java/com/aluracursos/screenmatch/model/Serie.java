@@ -3,7 +3,7 @@ package com.aluracursos.screenmatch.model;
 import jakarta.persistence.*;
 import jakarta.persistence.Id;
 import org.springframework.boot.autoconfigure.web.WebProperties;
-
+import java.util.List;
 import java.util.OptionalDouble;
 
 @Entity
@@ -22,6 +22,11 @@ public class Serie {
     private Categoria genero;
     private String actores;
     private String sinopsis;
+    @Transient
+
+    private List<Episodio> episodios;
+
+    public Serie(){}
 
     public Serie(DatosSerie datosSerie){
         this.titulo = datosSerie.titulo();
@@ -43,6 +48,14 @@ public class Serie {
 
                 ", actores='" + actores + '\'' +
                 ", sinopsis='" + sinopsis + '\'';
+    }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
     }
 
     public String getTitulo() {
