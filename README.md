@@ -25,6 +25,8 @@ En este proyecto, profundice en el manejo de consultas JPA, explorando diversos 
 
 •	JPQL
 
+•	PostgreSQL
+
 •	SQL
 
 •	IDE: IntelliJ Community Edition v2023.1.2
