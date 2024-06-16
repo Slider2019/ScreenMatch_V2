@@ -12,7 +12,6 @@ public class ScreenmatchApplication implements CommandLineRunner {
 
 	@Autowired
 	private SerieRepository repository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(ScreenmatchApplication.class, args);
 	}
